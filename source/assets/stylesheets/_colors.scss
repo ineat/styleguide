@@ -1,0 +1,22 @@
+$red:          #EA1E54;
+$red-light:    #F73C76;
+
+$blue:         #00ADEE;
+$blue-light:   #53D2F9;
+
+$yellow:       #FCB731;
+$yellow-light: #FCD081;
+
+$green:        #B2D235;
+$green-light:  #D7F460;
+
+$white:        #FFFFFF;
+$black:        #282828;
+
+$foundation-palette: (
+  primary: $red,
+  secondary: $blue,
+  success: $green,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
