@@ -9,6 +9,7 @@ html lang="#{data.settings.site.i18n}"
 
   body class="#{page_classes}"
 
+    = partial 'views/commons/top-bar'
     == yield
 
     = javascript_include_tag 'application'

@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "dropzone": "^4.3.0"
+    "dropzone": "^4.3.0",
+    "foundation-sites": "^6.3.0"
   }
 }
