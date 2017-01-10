@@ -1,13 +1,12 @@
 {
-  "name": "codeless",
-  "version": "0.0.1",
-  "homepage": "https://github.com/flexbox/codeless",
+  "name": "styleguide",
+  "homepage": "https://github.com/ineat/styleguide",
   "authors": [
-    "flexbox <dleuliette@gmail.com>"
+    "David Leuliette <dleuliette@gmail.com>"
   ],
-  "description": "Middleman starter template with Sass, slim and CoffeeScript. Based on ruby on rails architecture.",
-  "license": "GNU/GPL",
-  "private": false,
+  "description": "User Interface elements for websites",
+  "license": "GPL",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",

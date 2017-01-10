@@ -54,8 +54,8 @@ configure :build do
     sitemap: data.settings.site.url+'/sitemap.xml'
 
   # Use this for github.io gh-pages
-  # activate :relative_assets
-  # set :relative_links, true
+  activate :relative_assets
+  set :relative_links, true
 end
 
 # Push-it to the web
@@ -66,10 +66,6 @@ activate :deploy do |deploy|
 
   committer_app = "#{Middleman::Deploy::PACKAGE} v#{Middleman::Deploy::VERSION}"
   commit_message = "Deployed using #{committer_app}"
-
-  if ENV["TRAVIS_BUILD_NUMBER"] then
-    commit_message += " (Travis Build \##{ENV["TRAVIS_BUILD_NUMBER"]})"
-  end
 
   deploy.commit_message = commit_message
 end
