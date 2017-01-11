@@ -11,3 +11,20 @@ ul.menu.vertical
     = link_to 'Feedback Elements', '#feedback'
   li
     = link_to 'Dropzone', '#dropzone'
+
+hr
+= link_to 'https://github.com/ineat', target: '_blank' do
+  = fa 'github fa-fw'
+  'GitHub
+br
+= link_to "https://twitter.com/#{data.settings.social.twitter}", target: '_blank' do
+  = fa 'twitter fa-fw'
+  |@
+  = data.settings.social.twitter
+br
+= link_to 'https://vimeo.com/user5375243', target: '_blank' do
+  = fa 'vimeo fa-fw'
+  'vimeo
+
+
+

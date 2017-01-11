@@ -5,3 +5,9 @@
 
 @import 'foundation-sites/scss/foundation';
 @include foundation-everything(true);
+
+@import 'atoms/hero';
+@import 'atoms/pictures';
+@import 'atoms/typography';
+
+@import 'molecules/top-bar';
