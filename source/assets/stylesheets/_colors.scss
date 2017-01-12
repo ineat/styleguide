@@ -1,27 +1,41 @@
-$red:          #EB1E54;
 $red-light:    #E83C6D;
+$red:          #EB1E54;
+$red-dark:     #B2063B;
 
-$green:        #B3D143;
 $green-light:  #CED954;
+$green:        #B3D143;
+$green-dark:   #86A30D;
 
-$purple:       #A9288D;
 $purple-light: #BB4B95;
+$purple:       #A9288D;
+$purple-dark:  #601766;
 
-$blue:         #00AFEC;
 $blue-light:   #00B1EB;
+$blue:         #00AFEC;
+$blue-dark:    #0783A0;
 
-$yellow:       #FBB743;
+$orange-light: #FF8533;
+$orange:       #FF6700;
+$orange-dark:  #D35702;
+
 $yellow-light: #F2C360;
+$yellow:       #FBB743;
+$yellow-dark:  #CE8402;
+
+$light-gray:   #B2B2B2;
+$medium-gray:  #575757;
+$dark-gray:    #05000B;
 
 $white:        #FFFFFF;
+$gray-light:   $light-gray;
+$gray:         $medium-gray;
+$gray-dark:    $dark-gray;
 $black:        #2D2E2B;
-$gray:         #575756;
-
 
 $foundation-palette: (
   primary: $red,
   secondary: $blue,
   success: $green,
   warning: #ffae00,
-  alert: #cc4b37,
+  alert: $orange,
 );
