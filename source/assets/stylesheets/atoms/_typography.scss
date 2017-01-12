@@ -1,3 +1,16 @@
 h1, h2, h3, h4, h5, h6 {
   color: $blue;
 }
+
+.emperor {
+  @extend h1;
+}
+.vader {
+  @extend h2;
+}
+.maul {
+  @extend h3;
+}
+.sith {
+  @extend h4;
+}

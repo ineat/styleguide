@@ -7,32 +7,43 @@ description: ''
   .medium-3.columns
     = partial 'views/sidenav'
   .medium-9.columns
-    h2 Base
-    #color
-      h3 Color
+    h1.hero-title Base
+    #color.section-separator
+      h2 Color
 
-    #buttons
-      h3 Buttons
+    #buttons.section-separator
+      h2 Buttons
+      .row
+        .medium-3.columns
+          = link_to 'primary', '#', class: 'button primary expanded'
+        .medium-3.columns
+          = link_to 'secondary', '#', class: 'button secondary expanded'
+        .medium-2.columns
+          = link_to 'success', '#', class: 'button success expanded'
+        .medium-2.columns
+          = link_to 'alert', '#', class: 'button alert expanded'
+        .medium-2.columns
+          = link_to 'warning', '#', class: 'button warning expanded'
 
-    #typography
-      h3 Typography
-      p We use several fonts for different purposes:
-      ul
-        li Open Sans for <strong>forms</strong>
-        li Quattrocento for <strong>headers</strong>
-        li Fanwood Text for any other <strong>text</strong>
-      p We use Quattrocento font for headers. We've defined up to 6 levels but we mainly use only the first 3 ones.
+    #typography.section-separator
+      markdown:
+        ## Typography
+
+        On the web, we use one font because _every millisecond matters_:
+
+        - Lato bold for <strong>headers</strong>
+        - Lato regular for any other <strong>text</strong>
+
+        We've defined up to 4 levels but we mainly use only the first 3 ones.
 
       p.emperor Heading Level 1
       p.vader Heading Level 2
       p.maul Heading Level 3
       p.sith Heading Level 4
-      p.sidekick Heading Level 5
-      p.human Heading Level 6
 
-    #form-elements
-      h3 Form Elements
-    #feedback-elements
-      h3 Feedback Elements
-    #dropzone
-      h3 Dropzone
+    #form-elements.section-separator
+      h2 Form Elements
+    #feedback-elements.section-separator
+      h2 Feedback Elements
+    #dropzone.section-separator
+      h2 Dropzone

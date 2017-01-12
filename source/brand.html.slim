@@ -12,7 +12,7 @@ description: 'Ressources de la marque INEAT Group'
       ## Logo
 
     .row
-      .medium-4.columns
+      .small-12.medium-4.columns
         = image_tag 'ineat-logo.png', class: 'picture-download', alt: 'Poulpy le logo officiel d’INEAT Group'
         p
           'Télécharger
@@ -21,7 +21,7 @@ description: 'Ressources de la marque INEAT Group'
           strong => link_to 'SVG', image_path('ineat-logo.svg')
           '•
           strong = link_to 'EPS', image_path('ineat-logo.eps')
-      .medium-4.columns
+      .small-12.medium-4.columns
         = image_tag 'ineat-logo-title.png', class: 'picture-download', alt: 'Poulpy le logo officiel d’INEAT Group'
         p
           'Télécharger
@@ -30,7 +30,7 @@ description: 'Ressources de la marque INEAT Group'
           strong => link_to 'SVG', image_path('ineat-logo-title.svg')
           '•
           strong = link_to 'EPS', image_path('ineat-logo-title.eps')
-      .medium-4.columns
+      .small-12.medium-4.columns
         = image_tag 'ineat-logo-baseline.png', class: 'picture-download', alt: 'Poulpy le logo officiel d’INEAT Group'
         p
           'Télécharger
@@ -39,6 +39,12 @@ description: 'Ressources de la marque INEAT Group'
           strong => link_to 'SVG', image_path('ineat-logo-baseline.svg')
           '•
           strong = link_to 'EPS', image_path('ineat-logo-baseline.eps')
+
+    .row.align-center
+      .medium-6.columns
+        = link_to '/assets/charte-graphique-INEAT-Group', class: 'button expanded', target: '_blank' do
+          'Télécharger la charte graphique
+          = fa 'external-link'
 
     markdown:
       Le logo INEAT a été conçu par Hibon Mickael et Hugault Dauvois.

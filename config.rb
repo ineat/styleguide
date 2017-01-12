@@ -7,6 +7,7 @@ activate :directory_indexes
 set :js_dir,     'assets/javascripts'
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
+set :site_url,   ''
 
 page '/*.xml',  layout: false
 page '/*.json', layout: false
@@ -56,6 +57,7 @@ configure :build do
   # Use this for github.io gh-pages
   activate :relative_assets
   set :relative_links, true
+  set :site_url, '/styleguide'
 end
 
 # Push-it to the web
