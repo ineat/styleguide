@@ -1,0 +1,20 @@
+name:
+  -
+    title: red
+  -
+    title: green
+  -
+    title: purple
+  -
+    title: blue
+  -
+    title: orange
+  -
+    title: yellow
+saturation:
+  -
+    title: light
+  -
+    title:
+  -
+    title: dark

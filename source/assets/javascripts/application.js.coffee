@@ -1,1 +1,3 @@
-#= require_self
+#= require "jquery/dist/jquery.min"
+
+#= require "color-extractor"

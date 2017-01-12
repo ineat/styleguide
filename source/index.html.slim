@@ -10,6 +10,13 @@ description: ''
     h1.hero-title Base
     #color.section-separator
       h2 Color
+      .js-color-list.color-list
+        h3 Branding colors
+        .row.collapse
+          - data.colors.name.each do |color|
+            - data.colors.saturation.each do |satur|
+              .small-4.columns
+                div class="js-box color-list--box #{color.title} #{satur.title}"
 
     #buttons.section-separator
       h2 Buttons

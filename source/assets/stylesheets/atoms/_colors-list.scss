@@ -1,0 +1,78 @@
+$color-list-box-size: rem-calc(100);
+
+@mixin color-list-box($bg) {
+  background-color: $bg;
+
+  // This find the lightness percentage of the background color.
+  $bg-lightness: lightness($bg);
+  @if $bg-lightness > 70% {
+    color: $black;
+    text-shadow: 0px 2px rgba($white,0.4);
+  }
+  @else {
+    color: $white;
+    text-shadow: 0px 2px rgba($black,0.4);
+  }
+}
+
+.color-list {
+  &--box {
+    height: $color-list-box-size;
+    border-top: 5px solid $white;
+    border-bottom: 5px solid $white;
+    text-align: center;
+    padding: rem-calc(10);
+    padding-top: rem-calc(15);
+
+    &.primary {
+      @include color-list-box($primary-color);
+    }
+    &.secondary {
+      @include color-list-box($secondary-color);
+    }
+    &.alert {
+      @include color-list-box($alert-color);
+    }
+    &.success {
+      @include color-list-box($success-color);
+    }
+
+    &.red {
+      @include color-list-box($red);
+      &.light { background-color: $red-light;}
+      &.dark { background-color: $red-dark;}
+    }
+
+    &.green {
+      @include color-list-box($green);
+      &.light { background-color: $green-light;}
+      &.dark { background-color: $green-dark;}
+    }
+
+    &.purple {
+      @include color-list-box($purple);
+      &.light { background-color: $purple-light;}
+      &.dark { background-color: $purple-dark;}
+    }
+
+    &.blue {
+      @include color-list-box($blue);
+      &.light { background-color: $blue-light;}
+      &.dark { background-color: $blue-dark;}
+    }
+
+    &.orange {
+      @include color-list-box($orange);
+      &.light { background-color: $orange-light;}
+      &.dark { background-color: $orange-dark;}
+    }
+
+    &.yellow {
+      @include color-list-box($yellow);
+      &.light { background-color: $yellow-light;}
+      &.dark { background-color: $yellow-dark;}
+    }
+
+
+  }
+}
