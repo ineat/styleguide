@@ -73,6 +73,11 @@ $color-list-box-size: rem-calc(100);
       &.dark { background-color: $yellow-dark;}
     }
 
+    &.gray {
+      @include color-list-box($gray);
+      &.light { background-color: $gray-light;}
+      &.dark { background-color: $gray-dark;}
+    }
 
   }
 }

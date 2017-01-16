@@ -11,6 +11,8 @@ name:
     title: orange
   -
     title: yellow
+  -
+    title: gray
 saturation:
   -
     title: light

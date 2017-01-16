@@ -1,6 +1,5 @@
 $(function () {
   if(document.contains(document.getElementById("#js-dropzone"))) {
-    //je récupère l'action où sera traité l'upload en PHP
     var _actionToDropZone = $("#js-dropzone").attr('action');
 
     //je définis ma zone de drop grâce à l'ID de ma div citée plus haut.
@@ -12,5 +11,3 @@ $(function () {
     });
   }
 });
-
-

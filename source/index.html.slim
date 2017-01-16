@@ -3,54 +3,103 @@ title: Styleguide
 description: ''
 ---
 
-.row
-  .small-12.medium-3.columns
-    = partial 'views/sidenav'
-  .small-12.medium-9.columns
-    h1.hero-title Base
-    #color.section-separator
-      h2 Color
-      .js-color-list.color-list
-        h3 Branding colors
-        .row.collapse
-          - data.colors.name.each do |color|
-            - data.colors.saturation.each do |satur|
-              .small-4.columns
-                div class="js-box color-list--box #{color.title} #{satur.title}"
+.container
+  .layout
+    .layout-navigation
+      = partial 'views/sidenav'
+    .layout-content
 
-    #buttons.section-separator
-      h2 Buttons
-      .row
-        .medium-3.columns
-          = link_to 'primary', '#', class: 'button primary expanded'
-        .medium-3.columns
-          = link_to 'secondary', '#', class: 'button secondary expanded'
-        .medium-2.columns
-          = link_to 'success', '#', class: 'button success expanded'
-        .medium-2.columns
-          = link_to 'alert', '#', class: 'button alert expanded'
-        .medium-2.columns
-          = link_to 'warning', '#', class: 'button warning expanded'
+      h1.hero-title Base
+      #color.section-separator
+        h2 Color
+        .js-color-list.color-list
+          h3 Branding colors
+          .row.collapse
+            - data.colors.name.each do |color|
+              - data.colors.saturation.each do |satur|
+                .small-4.columns
+                  div class="js-box color-list--box #{color.title} #{satur.title}"
 
-    #typography.section-separator
-      markdown:
-        ## Typography
+      #buttons.section-separator
+        h2 Buttons
+        .row
+          .medium-3.columns
+            = link_to 'primary', '#', class: 'button primary expanded'
+          .medium-3.columns
+            = link_to 'secondary', '#', class: 'button secondary expanded'
+          .medium-3.columns
+            = link_to 'success', '#', class: 'button success expanded'
+          .medium-3.columns
+            = link_to 'alert', '#', class: 'button alert expanded'
 
-        On the web, we use one font because _every millisecond matters_:
+      #typography.section-separator
+        markdown:
+          ## Typography
 
-        - Lato bold for <strong>headers</strong>
-        - Lato regular for any other <strong>text</strong>
+          On the web, we use one font because _every millisecond matters_:
 
-        We've defined up to 4 levels but we mainly use only the first 3 ones.
+          - Lato bold for <strong>headers</strong>
+          - Lato regular for any other <strong>text</strong>
 
-      p.emperor Heading Level 1
-      p.vader Heading Level 2
-      p.maul Heading Level 3
-      p.sith Heading Level 4
+          We've defined up to 4 levels but we mainly use only the first 3 ones.
 
-    #form-elements.section-separator
-      h2 Form Elements
-    #feedback-elements.section-separator
-      h2 Feedback Elements
-    #dropzone.section-separator
-      h2 Dropzone
+        p.emperor Heading Level 1
+        p.vader Heading Level 2
+        p.maul Heading Level 3
+        p.sith Heading Level 4
+
+      #form-elements.section-separator
+        h2 Form Elements
+        form
+          .row
+            .medium-6.columns
+              label Full name
+              input placeholder="Gordon Freeman" type="text"
+            .medium-6.columns
+              label Choose your location
+              select
+                option value="fixture" Aperture Fixtures
+                option value="inovator" Aperture Science Innovators
+                option value="aperture" Aperture
+                option value="labo" Aperture Laboratories
+                option value="science" Aperture Science
+          .row
+            .large-12.columns
+              label Explain the Hazardous Environment Suit workflow
+              textarea placeholder="The suit is designed to protect the user from…" rows="5"
+          .row
+            .large-6.columns
+              p Choose Your Favorite
+              ul.no-bullet
+                li
+                  input#pokemonRed name="pokemon" type="radio" value="Red"
+                  label for="pokemonRed" Aperture Science
+                li
+                  input#pokemonBlue name="pokemon" type="radio" value="Blue"
+                  label for="pokemonBlue" Black mesa
+            .large-6.columns
+              p Check these out
+              ul.no-bullet
+                li
+                  input#checkbox1 type="checkbox"
+                  label for="checkbox1" Erik Wolpaw
+                li
+                  input#checkbox2 type="checkbox"
+                  label for="checkbox2" Kim Swift
+                li
+                  input#checkbox3 type="checkbox"
+                  label for="checkbox3" GLaDOS
+
+
+      #feedback-elements.section-separator
+        h2 Feedback Elements
+        .callout.success
+          'I am a success message
+        .callout.alert
+          'I am an alert message
+      #dropzone.section-separator
+        h2 Dropzone
+        div#js-dropzone.dropzone action="#"
+          div.fallback
+            input type="file" name="file"
+      = partial 'views/commons/footer'
