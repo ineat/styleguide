@@ -1,0 +1,37 @@
+---
+title: workers
+description: 'Témoignages de personnes travaillant chez INEAT Group'
+---
+
+.row.align-center
+  - data.workers.each do |worker|
+    .medium-6.columns
+      .callout
+        .media-object
+          .media-object-section
+            .thumbnail
+              = image_tag lorem.image(100)
+          .media-object-section
+            h4
+              => worker.collaborator.job
+              br
+                small
+                  => worker.collaborator.name
+                  'en mission chez
+                  = worker.collaborator.client
+        - worker.collaborator.skills.each do |skill|
+          p.label.secondary
+            = skill.title
+          |&nbsp;
+        p
+          strong Briefing du client :
+        ul
+          - worker.collaborator.mission.each do |dailyjob|
+            li = dailyjob.description
+        p
+          strong La réalité du terrain :
+        blockquote
+          em = worker.collaborator.reality
+        = link_to '#', class: 'button secondary' do
+          'Travaillez avec INEAT
+          = worker.service_line

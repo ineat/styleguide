@@ -1,0 +1,229 @@
+-
+  service_line: Consulting
+  collaborator:
+    name: Marie
+    job: Product Owner pour une plateforme de publication
+    client: Adeo
+    mission:
+        - description: Supporter la mise en place de communautés d’expertises et identifier les protagonistes dans chacune des Business Unit.
+        - description: Organiser, mettre en place les moyens de diffusion et garantir la qualité de l’information.
+        - description: Animer la co‐construction des projets transversaux en favorisant les échanges et le travail commun.
+    skills:
+      - title: Agile
+      - title: Backlog
+      - title: Travail valeur métier
+      - title: Animation serious game
+    reality: Transformations de mission de Product Owner en responsable d'activité
+-
+  service_line: Consulting
+  collaborator:
+    name: Ridha
+    job: Expert Microsoft Sharepoint
+    client: Canon
+    mission:
+      - description: Configurer une gestion des droits efficace pour Sharepoint 2010
+      - description: Faciliter la gestion électronique des documents
+      - description: Amélioration de l'outil internet de generation de fichiers XML
+    skills:
+      - title: .net
+      - title: C Sharp
+      - title: Sharepoint
+    reality: Configuration et mise en oeuvre de la dématérialisation des factures
+-
+  service_line: Consulting
+  collaborator:
+    name: Michael
+    job: Chef de projet
+    client: Arvato
+    mission:
+      - description: Responsable technique de différentes plateformes web
+      - description: Suivi technique des clients et prestataires
+      - description: Développements, maintenances et exploitation
+    skills:
+      - title: .net
+      - title: HTML
+      - title: CSS
+      - title: JavaScript
+    reality: Études et Conceptions des différents projets
+-
+  service_line: Expertise
+  collaborator:
+    name: Benjamin
+    job: Dévelopeur iOS
+    client: Lyreco
+    mission:
+      - description: Développement d'une application e-commerce
+    skills:
+      - title: Java
+      - title: J2EE
+      - title: Objective-C
+      - title: Swift
+    reality: Manager et partager mon expertise avec l'équipe du client en interne
+-
+  service_line: Expertise
+  collaborator:
+    name: Benoît
+    job: Chef de projet AMOA
+    client: Groupe UP - Chèque Déjeuner
+    mission:
+      - description: Développement d'un site en marque blanche (type usine à site) comprenant une Marketplace et un réseau social.
+      - description: Aider l'équipe pour la réalisation de la vision technique
+      - description: Informer les clients
+    skills:
+      - title: Kanban
+      - title: Trello
+      - title: Ninjamock
+      - title: Liferay
+    reality: Scrum master
+-
+  service_line: Expertise
+  collaborator:
+    name: Baptiste
+    job: Ingénieur informaticien
+    client: Adeo
+    mission:
+      - description: Réalisation d'une API de gestion de contenu
+      - description: Génération d'une documentation swagger automatique
+      - description: Typage du code JavaScript avec flow, linter avec eslint
+    skills:
+      - title: API
+      - title: JavaScript
+      - title: NodeJS
+      - title: vue.js
+    reality: 'Partage des bonnes pratiques de développement & mise en place de tests de non regression'
+-
+  service_line: Solutions
+  collaborator:
+    name: Nolan
+    job: Développeur Ionic
+    client: Sergic
+    mission:
+      - description: Développement d'une application hybride avec Ionic
+      - description: Mise en place de test de non régression
+      - description: Automatisation des depoyement sur les app stores avec fastlane
+    skills:
+      - title: Java
+      - title: J2EE
+      - title: JavaScript
+      - title: AngularJS
+    reality: 'Developement d’un backoffice de gestion des collaborateurs en AngularJS'
+-
+  service_line: Solutions
+  collaborator:
+    name: Mehdi
+    job: Développeur Android
+    client: Leroy Merlin
+    mission:
+      - description: Aider les équipes internes à développer des applications mobiles pour les collaborateurs
+      - description: Mise en place d’une intégration continue orienté mobile
+      - description: Tous les projets sont mis en place avec des tests unitaires et fonctionnels selon la technologie
+    skills:
+      - title: Android
+      - title: fastlane
+      - title: docker
+      - title: groovy pipeline
+    reality: 'Elle va au delà de mes espérances, il y a pleins de sujet super intéressant et ça c’est top'
+-
+  service_line: Solutions
+  collaborator:
+    name: Emmanuel
+    job: Développeur Android
+    client: Leroy Merlin
+    mission:
+      - description: Wanted Swiss Knife
+    skills:
+      - title: Java
+      - title: J2EE
+      - title: JavaScript
+      - title: mongodb
+    reality: 'Rendre l’impossible possible'
+-
+  service_line: Technology
+  collaborator:
+    name: Thomas
+    job: Administrateur Système
+    client: Auchan
+    mission:
+      - description: Administrateur production
+      - description: Maintien opérationnelle du POP
+      - description: Communication N2 et N3
+    skills:
+      - title: Bash
+      - title: PHP
+      - title: HTML
+      - title: CSS
+    reality: 'Amélioration continue'
+-
+  service_line: Technology
+  collaborator:
+    name: Germain
+    job: System operator
+    client: Decathlon
+    mission:
+      - description: Intégration technique et Administration système
+    skills:
+      - title: Bash
+      - title: redhat
+      - title: weblogic
+      - title: jenkins
+      - title: sonar
+    reality: 'Industrialisation et automatisation de déploiement des stack techniques'
+-
+  service_line: Technology
+  collaborator:
+    name: Sébastien
+    job: Expert McAfee
+    client: Atos
+    mission:
+      - description: Migration de la solution SNCF Lille vers SNCF Lyon
+      - description: Etude et présentation des différentes solutions envisageables
+      - description: Rationalisation d'infrastructure McAfee en collaboration avec mes homologues Lyonnais
+      - description: Aide à la mise en place de l'infrastructure cible
+    skills:
+      - title: Sécurité
+      - title: McAfee
+    reality: 'Migration et reprise du périmètre McAfee Lyonnais'
+-
+  service_line: Web Agency
+  collaborator:
+    name: Adrien
+    job: Développeur front-end
+    client: Decathlon
+    mission:
+      - description: Maintenance et évolutions des sites de marques de Decathlon
+      - description: Mise en place de Gulp
+      - description: Migration de librairies (JavaScript et SASS)
+    skills:
+      - title: HTML
+      - title: CSS
+      - title: JavaScript
+      - title: PHP
+    reality: 'Refonte graphique du site de la marque INESIS'
+-
+  service_line: Web Agency
+  collaborator:
+    name: Nicolas
+    job: Developpeur PHP
+    client: Zouzoucar
+    mission:
+      - description: Architecture de l’API
+      - description: Developpement des batchs
+    skills:
+      - title: PHP
+      - title: Symfony
+    reality: 'Création d’un BackOffice pour l’application mobile du client'
+-
+  service_line: Web Agency
+  collaborator:
+    name: Mickael
+    job: Designer UI / UX
+    client: INEAT Group
+    mission:
+      - description: Proposition d’atmoshphère de design
+      - description: Réalisation de logo
+    skills:
+      - title: Photoshop
+      - title: Illustrator
+      - title: Balsamiq Mockup
+      - title: Sketch
+    reality: 'Conception et intégreration d’interfaces visuelles'
