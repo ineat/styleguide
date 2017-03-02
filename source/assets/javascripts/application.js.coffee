@@ -1,5 +1,5 @@
 #= require "jquery/dist/jquery.min"
 #= require "color-extractor"
 
-#= require "dropzone/dist/dropzone"
-#= require "dropzone"
+#= require "qarticles.min.js"
+#= require "galaxy-skills"
