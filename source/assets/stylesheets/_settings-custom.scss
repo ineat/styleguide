@@ -1,13 +1,117 @@
-$global-font-size: 120%;
+@mixin link-color($color, $hover){
+  a {
+    color: $color;
+    &:hover,
+    &:focus {
+      color: $hover;
+    }
+  }
+}
 
 $font-family: 'Lato', Helvetica, Roboto, Arial, sans-serif;
+
+$body-font-family: 'Lato', Arial, 'Comic Sans MS';
+$header-font-family: 'Lato', Arial, 'Comic Sans MS';
+
 
 $font-weight-normal: 400;
 $font-weight-bold:   700;
 $font-weight-bolder: 900;
 
-$header-font-weight: $font-weight-bold;
-$header-font-style: bold;
+$header-font-weight: $font-weight-bolder;
+$anchor-text-decoration-hover: underline;
 
-$topbar-title-spacing: 0 1rem;
+
+// 5. Typography Helpers
+// ---------------------
+
+$subheader-lineheight: 1;
+$subheader-color: $black;
+$subheader-font-weight: $font-weight-bolder;
+$subheader-margin-top: 0;
+$subheader-margin-bottom: 0;
+
+$hr-border: 1px solid rgba($gray-light, 0.4);
+
+
+
+// 11. Button
+// ----------
+
+$button-background: $red;
+$button-background-hover: scale-color($button-background, $lightness: 20%);
+$button-background-hover-lightness: 20%;
+$button-hollow-hover-lightness: 50%;
+
+
+
+// 13. Callout
+// -----------
+
+$callout-background: $white;
+$callout-background-fade: 0%;
+$callout-border: none;
+$callout-margin: 0 0 1rem 0;
+$callout-padding: 2rem;
+$callout-font-color: $white;
+$callout-font-color-alt: $black;
+$callout-link-tint: 30%;
+
+
+
+// 14. Card
+// --------
+
+$card-divider-background: rgba($light-gray, 0.2);
+$card-border: 1px solid rgba($light-gray, 0.2);
+$card-shadow: none;
+
+
+
+// 19. Forms
+// ---------
+
+$input-background: $white;
+$input-background-focus: rgba($blue-light, 0.2);
+$input-background-disabled: $gray;
+$input-border: 3px solid $gray-light;
+$input-border-focus: 3px solid $blue;
+$input-shadow: none;
+$input-shadow-focus: none;
+$input-cursor-disabled: not-allowed;
+$input-transition: background-color 0.5s, border-color 0.25s ease-in-out;
+$input-number-spinners: true;
+
+
+
+// 22. Menu
+// --------
+
+$menu-item-padding: 1rem 2rem;
+
+
+
+// 29. Reveal
+// ----------
+
+$reveal-border: 1px solid $gray-light;
+
+
+
+// 37. Top Bar
+// -----------
+
+$topbar-padding: 1rem;
 $topbar-background: $black;
+$topbar-title-spacing: 0 1rem;
+
+
+
+// 37. Top Bar
+// -----------
+
+$motion-ui-speeds: (
+  default: 300ms,
+  slow: 750ms,
+  fast: 100ms,
+);

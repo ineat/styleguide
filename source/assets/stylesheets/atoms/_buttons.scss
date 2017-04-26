@@ -1,0 +1,29 @@
+.button {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &.hollow {
+    &.dark {
+      @include button-hollow-style($color: $black, $hover-lightness: 0);
+    }
+    &.white {
+      @include button-hollow-style($color: $white, $hover-lightness: 0);
+    }
+    &:hover {
+      background-color: rgba($white, 0.2);
+    }
+  }
+
+
+}
+
+.close-button {
+  top: 1.5rem;
+}
+.callout.alert,
+.callout.success {
+  margin-bottom: 0;
+  color: $white;
+}
